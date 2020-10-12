@@ -8,7 +8,7 @@ public class BackToMainMenu : MonoBehaviour
     // Start is called before the first frame update
     public void loadGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("1-1");
     }
 
     void Start()
