@@ -3,7 +3,22 @@ guid: 8eab6ea106b54704798a820c418c5573
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - textLabel: {instanceID: 0}
+  - faceImage: {instanceID: 0}
+  - textFile: {instanceID: 0}
+  - face01: {instanceID: 0}
+  - face02: {instanceID: 0}
+  - face03: {instanceID: 0}
+  - face04: {instanceID: 0}
+  - face05: {instanceID: 0}
+  - face06: {instanceID: 0}
+  - face07: {instanceID: 0}
+  - face08: {instanceID: 0}
+  - face09: {instanceID: 0}
+  - face10: {instanceID: 0}
+  - face11: {instanceID: 0}
+  - face12: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

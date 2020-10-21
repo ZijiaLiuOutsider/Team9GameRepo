@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-
 public class DialogSysytem : MonoBehaviour
 {
     [Header("文本完成后跳转场景序号")]
@@ -65,6 +63,10 @@ public class DialogSysytem : MonoBehaviour
             }else if(sequz == 6){
               SceneManager.LoadScene("1-6");
             }
+            else if(sequz == 8)
+            {
+                SceneManager.LoadScene("1-8");
+            }
             
             return;
         }
@@ -82,9 +84,9 @@ public class DialogSysytem : MonoBehaviour
         textList.Clear();
         index = 0;
 
-        var lineDate = file.text.Split('\n');
+        var lineData = file.text.Split('\n');
 
-        foreach(var line in lineDate)
+        foreach(var line in lineData)
         {
             textList.Add(line);
         }
@@ -95,80 +97,83 @@ public class DialogSysytem : MonoBehaviour
         textFinished = false;
         textLabel.text = "";
 
-        //if (textList[index] == "A")  
+        //if (textList[index] == "G")
         //{
         //    faceImage.sprite = face01;
         //    index++;
-        //    Debug.Log("头像加载成功code1");
+        //    debug.log("头像加载成功code1");
         //}
-        
+
         switch (textList[index])
         {
-            case "A":
+            case "A\r":
                 faceImage.sprite = face01;
                 index++;
-                Debug.Log("switchLoadingSuccess code1");
+                Debug.Log("switchloadingsuccess code1");
+                Debug.Log(faceImage.sprite);
                 break;
-            case "B":
+            case "B\r":
                 faceImage.sprite = face02;
                 index++;
-                Debug.Log("switchLoadingSuccess code2");
-                break;
-                
-            case "C":
-                faceImage.sprite = face03;
-                index++;
-                Debug.Log("switchLoadingSuccess code3");
-                break;
-               
-            case "D":
-                faceImage.sprite = face04;
-                index++;
-                Debug.Log("switchLoadingSuccess code4");
-                break;
-                
-            case "E":
-                faceImage.sprite = face05;
-                index++;
-                Debug.Log("switchLoadingSuccess code5");
-                break;
-                
-            case "F":
-                faceImage.sprite = face06;
-                index++;
-                Debug.Log("switchLoadingSuccess code6");
-                break;
-                ;
-            case "G":
-                faceImage.sprite = face07;
-                index++;
-                Debug.Log("switchLoadingSuccess code7");
+                Debug.Log("switchloadingsuccess code2");
                 break;
 
-            case "H":
+            case "C\r":
+                faceImage.sprite = face03;
+                index++;
+                Debug.Log("switchloadingsuccess code3");
+                break;
+
+            case "D\r":
+                faceImage.sprite = face04;
+                index++;
+                Debug.Log("switchloadingsuccess code4");
+                break;
+
+            case "E\r":
+                faceImage.sprite = face05;
+                index++;
+                Debug.Log("switchloadingsuccess code5");
+                break;
+
+            case "F\r":
+                faceImage.sprite = face06;
+                index++;
+                Debug.Log("switchloadingsuccess code6");
+                break;
+                ;
+            case "G\r":
+                faceImage.sprite = face07;
+                index++;
+                Debug.Log("switchloadingsuccess code7");
+                Debug.Log(faceImage.sprite);
+                break;
+
+
+            case "H\r":
                 faceImage.sprite = face08;
                 index++;
-                Debug.Log("switchLoadingSuccess code8");
+                Debug.Log("switchloadingsuccess code8");
                 break;
-            case "I":
+            case "I\r":
                 faceImage.sprite = face09;
                 index++;
-                Debug.Log("switchLoadingSuccess code9");
+                Debug.Log("switchloadingsuccess code9");
                 break;
-            case "J":
+            case "J\r":
                 faceImage.sprite = face10;
                 index++;
-                Debug.Log("switchLoadingSuccess code10");
+                Debug.Log("switchloadingsuccess code10");
                 break;
-            case "K":
+            case "K\r":
                 faceImage.sprite = face11;
                 index++;
-                Debug.Log("switchLoadingSuccess code11");
+                Debug.Log("switchloadingsuccess code11");
                 break;
-            case "L":
+            case "L\r":
                 faceImage.sprite = face12;
                 index++;
-                Debug.Log("switchLoadingSuccess code12");
+                Debug.Log("switchloadingsuccess code12");
                 break;
         }
 
