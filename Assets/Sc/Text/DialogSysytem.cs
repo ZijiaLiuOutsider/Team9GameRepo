@@ -64,8 +64,22 @@ public class DialogSysytem : MonoBehaviour
               SceneManager.LoadScene("1-6");
             }else if(sequz == 8){
               SceneManager.LoadScene("1-8");
+            }else if(sequz == 9){
+              SceneManager.LoadScene("1-9");
+            }else if (sequz == 11){ 
+              SceneManager.LoadScene("1-11");
+            }else if (sequz == 12){
+              SceneManager.LoadScene("1-12");
+            }else if (sequz == 13){
+              SceneManager.LoadScene("1-13");
+            }else if (sequz == 14){
+              SceneManager.LoadScene("1-14");
+            }else if (sequz == 15){
+              SceneManager.LoadScene("1-15");
+            }else if (sequz == 16){
+              SceneManager.LoadScene("1-16");
             }
-            
+
             return;
         }
         if (Input.GetMouseButtonDown(0) && textFinished)

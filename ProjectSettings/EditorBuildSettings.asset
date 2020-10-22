@@ -32,10 +32,37 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-7.unity"
     guid: fb12b5d766733ce48b5a8a0c1a5cfb82
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-8.unity"
     guid: b00f2af61d927c44fb1ea532522e2192
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-9.unity"
+    guid: da3bcfab99167f84594c0c22b888c238
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-10.unity"
+    guid: 412fb951bde30e14db3b466b2622bf22
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-11.unity"
+    guid: 2cdb027edadb7e14f99b86f63f34e66c
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-12.unity"
+    guid: d43570c2fd0cef4419ada0d74cd9a07d
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-13.unity"
+    guid: ad6f655fb9178204dadbcff351473733
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-14.unity"
+    guid: 4050f2534bebfa9499ed552ad70a2a7c
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-15.unity"
+    guid: 7c06b1f10fbe7c1468cfc089363f4604
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-16.unity"
+    guid: aa8b17e13dba85644805ba6bce6a776a
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-17.unity"
+    guid: c2ff32111a237434a8ec5685bae42f7d
+  - enabled: 1
+    path: "Assets/Scenes/1th/\u7B2C\u4E09\u4E2A\u5C0F\u573A\u666F/1-18.unity"
+    guid: 47b5e6116eb8b5a41b5ba71aa286668d
   m_configObjects: {}
