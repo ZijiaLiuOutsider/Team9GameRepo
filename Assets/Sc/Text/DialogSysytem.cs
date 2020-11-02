@@ -31,8 +31,10 @@ public class DialogSysytem : MonoBehaviour
     public Sprite face10;
     public Sprite face11;
     public Sprite face12;
+    public Sprite face13;
 
     bool textFinished;
+    bool cancelTyping;
 
     List<string> textList = new List<string>();
 
@@ -82,12 +84,22 @@ public class DialogSysytem : MonoBehaviour
 
             return;
         }
-        if (Input.GetMouseButtonDown(0) && textFinished)
-        {
-            //textLabel.text = textList[index];
-            //index++;
+        //if (Input.GetMouseButtonDown(0) && textFinished)
+        //{
+        //    //textLabel.text = textList[index];
+        //    //index++;
 
-            StartCoroutine(SetTextUI());
+        //    StartCoroutine(SetTextUI());
+        //}
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (textFinished && !cancelTyping)
+            {
+                StartCoroutine(SetTextUI());
+            }
+            else if(textFinished == false && !cancelTyping){
+                cancelTyping = true;
+            }
         }
     }
 
@@ -187,13 +199,28 @@ public class DialogSysytem : MonoBehaviour
                 index++;
                 Debug.Log("switchloadingsuccess code12");
                 break;
+            case "M":
+                faceImage.sprite = face13;
+                index++;
+                Debug.Log("switchloadingsuccess code13");
+                break;
         }
 
-        for (int i = 0; i < textList[index].Length; i++)
+        //for (int i = 0; i < textList[index].Length; i++)
+        //{
+        //    textLabel.text += textList[index][i];
+        //    yield return new WaitForSeconds(textSpeed);
+        //}
+        int letter = 0;
+        while(!cancelTyping && letter  < textList[index].Length - 1)
         {
-            textLabel.text += textList[index][i];
+            textLabel.text += textList[index][letter];
+            letter++;
             yield return new WaitForSeconds(textSpeed);
         }
+        textLabel.text = textList[index];
+        cancelTyping = false;
+
         textFinished = true; 
         index++;
     }
