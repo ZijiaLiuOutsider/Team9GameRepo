@@ -130,43 +130,43 @@ public class DialogSysytem : MonoBehaviour
 
         switch (textList[index])
         {
-            case "A":
+            case "A\r":
                 faceImage.sprite = face01;
                 index++;
                 Debug.Log("switchloadingsuccess code1");
                 //Debug.Log(faceImage.sprite);
                 break;
-            case "B":
+            case "B\r":
                 faceImage.sprite = face02;
                 index++;
                 Debug.Log("switchloadingsuccess code2");
                 break;
 
-            case "C":
+            case "C\r":
                 faceImage.sprite = face03;
                 index++;
                 Debug.Log("switchloadingsuccess code3");
                 break;
 
-            case "D":
+            case "D\r":
                 faceImage.sprite = face04;
                 index++;
                 Debug.Log("switchloadingsuccess code4");
                 break;
 
-            case "E":
+            case "E\r":
                 faceImage.sprite = face05;
                 index++;
                 Debug.Log("switchloadingsuccess code5");
                 break;
 
-            case "F":
+            case "F\r":
                 faceImage.sprite = face06;
                 index++;
                 Debug.Log("switchloadingsuccess code6");
                 break;
                 ;
-            case "G":
+            case "G\r":
                 faceImage.sprite = face07;
                 index++;
                 Debug.Log("switchloadingsuccess code7");
@@ -174,32 +174,32 @@ public class DialogSysytem : MonoBehaviour
                 break;
 
 
-            case "H":
+            case "H\r":
                 faceImage.sprite = face08;
                 index++;
                 Debug.Log("switchloadingsuccess code8");
                 break;
-            case "I":
+            case "I\r":
                 faceImage.sprite = face09;
                 index++;
                 Debug.Log("switchloadingsuccess code9");
                 break;
-            case "J":
+            case "J\r":
                 faceImage.sprite = face10;
                 index++;
                 Debug.Log("switchloadingsuccess code10");
                 break;
-            case "K":
+            case "K\r":
                 faceImage.sprite = face11;
                 index++;
                 Debug.Log("switchloadingsuccess code11");
                 break;
-            case "L":
+            case "L\r":
                 faceImage.sprite = face12;
                 index++;
                 Debug.Log("switchloadingsuccess code12");
                 break;
-            case "M":
+            case "M\r":
                 faceImage.sprite = face13;
                 index++;
                 Debug.Log("switchloadingsuccess code13");
