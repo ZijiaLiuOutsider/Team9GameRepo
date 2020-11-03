@@ -738,6 +738,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u906E\u7F69"
       objectReference: {fileID: 0}
+    - target: {fileID: 1848048334828646197, guid: a9d25ddc89905a046bd385055a18dae2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3672074810028645440, guid: a9d25ddc89905a046bd385055a18dae2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.9682686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3672074810028645440, guid: a9d25ddc89905a046bd385055a18dae2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.3298512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3672074810028645440, guid: a9d25ddc89905a046bd385055a18dae2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7121
+      objectReference: {fileID: 0}
     - target: {fileID: 3672074811599421199, guid: a9d25ddc89905a046bd385055a18dae2, type: 3}
       propertyPath: m_Camera
       value: 
