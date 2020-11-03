@@ -79,7 +79,8 @@ public class Signalmother : MonoBehaviour
             {
                 transform.position = new Vector2(correctTrans.position.x, correctTrans.position.y);
                 number = 0;
-                //@isFinished = true;
+                SceneManager.LoadScene("1-14");
+                isFinished = true;
             }
             else
             {
