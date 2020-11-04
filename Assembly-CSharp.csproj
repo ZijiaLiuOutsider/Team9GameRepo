@@ -77,9 +77,10 @@
     <Compile Include="Assets\Sc\Scene\BackToMainMenu.cs" />
     <Compile Include="Assets\Sc\menu\MenuControl.cs" />
     <Compile Include="Assets\Sc\cam.cs" />
+    <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
     <Compile Include="Assets\Sc\Scene\1th\TheDoorClose.cs" />
     <Compile Include="Assets\Sc\Text\TalkButton.cs" />
-    <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
+    <Compile Include="Assets\Sc\ButtonPause.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
