@@ -66,6 +66,7 @@
     <Compile Include="Assets\Sc\Scene\1th\usePhone.cs" />
     <Compile Include="Assets\Sc\Scene\1th\DragToBody.cs" />
     <Compile Include="Assets\Sc\Scene\1th\DragToBody2.cs" />
+    <Compile Include="Assets\Sc\ButtonPause.cs" />
     <Compile Include="Assets\Test\MyDrag.cs" />
     <Compile Include="Assets\Sc\Scene\1th\Signalmother.cs" />
     <Compile Include="Assets\Sc\Text\PlayerController.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
     <Compile Include="Assets\Sc\Scene\1th\TheDoorClose.cs" />
     <Compile Include="Assets\Sc\Text\TalkButton.cs" />
-    <Compile Include="Assets\Sc\ButtonPause.cs" />
+    <Compile Include="Assets\Sc\UI\Line.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
