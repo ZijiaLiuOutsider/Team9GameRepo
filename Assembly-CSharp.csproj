@@ -66,6 +66,7 @@
     <Compile Include="Assets\Sc\Scene\1th\usePhone.cs" />
     <Compile Include="Assets\Sc\Scene\1th\DragToBody.cs" />
     <Compile Include="Assets\Sc\Scene\1th\DragToBody2.cs" />
+    <Compile Include="Assets\Sc\UI\Line.cs" />
     <Compile Include="Assets\Sc\ButtonPause.cs" />
     <Compile Include="Assets\Test\MyDrag.cs" />
     <Compile Include="Assets\Sc\Scene\1th\Signalmother.cs" />
@@ -81,9 +82,11 @@
     <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
     <Compile Include="Assets\Sc\Scene\1th\TheDoorClose.cs" />
     <Compile Include="Assets\Sc\Text\TalkButton.cs" />
-    <Compile Include="Assets\Sc\UI\Line.cs" />
+    <Compile Include="Assets\Sc\Drag\videoDrag.cs" />
+    <Compile Include="Assets\Sc\Drag\buttonDrag.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\dialog\2\2-4-1.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Sc\Text\dialog3-1-3.txt" />
@@ -105,6 +108,8 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Sc\Text\dialog3-1-2.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\dialog\2\2-3-1 1.txt" />
+     <None Include="Assets\dialog\2\2-1-1.txt" />
      <None Include="Assets\Sc\Text\dialog3-1-7.txt" />
      <None Include="Assets\Sc\Text\dialog3-1-4.txt" />
      <None Include="Assets\Scenes\1th\第三个小场景\人物映射表.txt" />
