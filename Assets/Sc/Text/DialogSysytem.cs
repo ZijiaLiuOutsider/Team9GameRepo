@@ -104,13 +104,17 @@ public class DialogSysytem : MonoBehaviour
             {
                 SceneManager.LoadScene("2-2");
             }
-            else if (sequz == 26)
+            else if (sequz == 27)
             {
-                SceneManager.LoadScene("2-6");
+                SceneManager.LoadScene("2-7");
             }
             else if (sequz == 24)
             {
                 SceneManager.LoadScene("2-4");
+            }
+            else if (sequz == 28)
+            {
+                SceneManager.LoadScene("2-8");
             }
             return;
         }

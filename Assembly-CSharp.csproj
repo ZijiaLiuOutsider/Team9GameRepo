@@ -70,9 +70,11 @@
     <Compile Include="Assets\Sc\ButtonPause.cs" />
     <Compile Include="Assets\Test\MyDrag.cs" />
     <Compile Include="Assets\Sc\Scene\1th\Signalmother.cs" />
+    <Compile Include="Assets\Sc\Drag\videoDrag.cs" />
     <Compile Include="Assets\Sc\Text\PlayerController.cs" />
     <Compile Include="Assets\Sc\UI\ClickToDestory.cs" />
     <Compile Include="Assets\Sc\SceneScaleController.cs" />
+    <Compile Include="Assets\Sc\Drag\buttonDrag.cs" />
     <Compile Include="Assets\Sc\Text\test.cs" />
     <Compile Include="Assets\Sc\cardPosition\GetPosition.cs" />
     <Compile Include="Assets\Sc\Scene\Board\Board.cs" />
@@ -82,8 +84,7 @@
     <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
     <Compile Include="Assets\Sc\Scene\1th\TheDoorClose.cs" />
     <Compile Include="Assets\Sc\Text\TalkButton.cs" />
-    <Compile Include="Assets\Sc\Drag\videoDrag.cs" />
-    <Compile Include="Assets\Sc\Drag\buttonDrag.cs" />
+    <Compile Include="Assets\Sc\Drag\zippoDrag.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\dialog\2\2-4-1.txt" />
@@ -119,6 +120,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Sc\Text\dialog3-1-6.txt" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\dialog\2\2-5.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Sc\Text\dialog1.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
