@@ -12,6 +12,9 @@ public class buttonDrag : MonoBehaviour
     public GameObject UIperfab;
     public float YL;  //固定y方向移动
 
+    public float LimateMAX;
+    public float LimateMin;
+
     private float hx;
     private float hy;
     private float hz;
@@ -47,8 +50,10 @@ public class buttonDrag : MonoBehaviour
     {
         //@if(isFinished ==  false )
         //@{
+        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x <= LimateMAX && Camera.main.ScreenToWorldPoint(Input.mousePosition).x >= LimateMin) { 
         transform.position = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
                                          YL);
+        }
         //@}
 
 
@@ -60,8 +65,8 @@ public class buttonDrag : MonoBehaviour
     {
         if (PANDING == true)
         {
-            if (Mathf.Abs(transform.position.x - zx) <= 2.0f &&
-                Mathf.Abs(transform.position.y - zy) <= 2.0f)
+            if (Mathf.Abs(transform.position.x - zx) <= 0.5f &&
+                Mathf.Abs(transform.position.y - zy) <= 0.5f)
             {
                 transform.position = new Vector2(zx, zy);
                 number = 0;
@@ -77,8 +82,8 @@ public class buttonDrag : MonoBehaviour
         }
         else if (PANDING == false)
         {
-            if (Mathf.Abs(transform.position.x - correctTrans.position.x) <= 2.0f &&
-                Mathf.Abs(transform.position.y - correctTrans.position.y) <= 2.0f)
+            if (Mathf.Abs(transform.position.x - correctTrans.position.x) <= 0.5f &&
+                Mathf.Abs(transform.position.y - correctTrans.position.y) <= 0.5f)
             {
                 transform.position = new Vector2(correctTrans.position.x, correctTrans.position.y);
                 number = 0;
