@@ -116,6 +116,10 @@ public class DialogSysytem : MonoBehaviour
             {
                 SceneManager.LoadScene("2-8");
             }
+            else if (sequz == 213)
+            {
+                SceneManager.LoadScene("2-13");
+            }
             return;
         }
         //if (Input.GetMouseButtonDown(0) && textFinished)

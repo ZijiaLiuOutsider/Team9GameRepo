@@ -7,11 +7,21 @@ using UnityEngine.SceneManagement;
 public class ButtonPause : MonoBehaviour
 {
     public GameObject ingameMenu;
+    public GameObject Lboard;
 
     public void OnPause()
     {
         Time.timeScale = 0;
         ingameMenu.SetActive(true);
+    }
+
+    public void OnBoard()
+    {
+        Lboard.SetActive(true);
+    }
+    public void CloseBoard()
+    {
+        Lboard.SetActive(false);
     }
 
     public void OnResume()

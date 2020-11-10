@@ -63,7 +63,11 @@ public class LChangeScene : MonoBehaviour
             {
                SceneManager.LoadScene("2-12");
             }
-           
+            if (SceneNumber == 213)
+            {
+                SceneManager.LoadScene("2-13");
+            }
+
         }
     }
 
