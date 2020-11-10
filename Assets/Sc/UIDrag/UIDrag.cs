@@ -14,6 +14,8 @@ public class UIDrag : MonoBehaviour
     public GameObject originUI; //起始UI图标
     public GameObject targetUI; //目的图标
 
+    public float SceneNumber;
+
 
     private float hx;
     private float hy;
@@ -73,6 +75,15 @@ public class UIDrag : MonoBehaviour
                 originUI.SetActive(false);
                 targetUI.SetActive(true);
                 Debug.Log("correct place...");
+                //yield return new WaitForSeconds(2);
+                if(SceneNumber == 214)
+                {
+                    SceneManager.LoadScene("2-14");
+                }
+                if (SceneNumber == 215)
+                {
+                    SceneManager.LoadScene("2-15");
+                }
                 isFinished = true;
             }
             else
@@ -93,6 +104,14 @@ public class UIDrag : MonoBehaviour
                 originUI.SetActive(false);
                 targetUI.SetActive(true);
                 Debug.Log("correct place...");
+                if (SceneNumber == 214)
+                {
+                    SceneManager.LoadScene("2-14");
+                }
+                if (SceneNumber == 215)
+                {
+                    SceneManager.LoadScene("2-15");
+                }
                 isFinished = true;
                 //@isFinished = true;
             }
