@@ -11,6 +11,15 @@ public class BackToMainMenu : MonoBehaviour
         SceneManager.LoadScene("1-1");
     }
 
+    public void LoadLine()
+    {
+        SceneManager.LoadScene("Line");
+    }
+
+    public void QuiteGame()
+    {
+        Application.Quit();
+    }
     void Start()
     {
         
