@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,6 +8,8 @@ public class TheDoorClose : MonoBehaviour
     private Vector2 startPos;
     [SerializeField] private Transform correctTrans;//黑色图片位置信息
     [SerializeField] private bool isFinished;//如果位置正确再也不能拖拽物体
+    Rigidbody2D rigidbody2d;
+    public float speed = 3.0f;
 
     public GameObject UIperfab;
 
@@ -19,14 +22,20 @@ public class TheDoorClose : MonoBehaviour
 
     private bool PANDING;//用于判定是场景中物体还是UI中产生的物体
     private float number = 0;
+    private Boolean ondrag = false;
 
     Quaternion b = new Quaternion(0, 0, 0, 0);
     Vector3 a = new Vector3(0, 0, 0); //实例化预制体的position，可自定义
 
+    public AudioClip tremble;  //指定需要播放的音效
+    private AudioSource source;   //必须定义AudioSource才能调用AudioClip
+
     private void Start()
     // Start is called before the first frame update
     {
+        rigidbody2d = GetComponent<Rigidbody2D>();
         startPos = transform.position;
+        source = GetComponent<AudioSource>();  //将this Object 上面的Component赋值给定义的AudioSource
 
         if (zx == 0 || zy == 0)
         {
@@ -43,6 +52,9 @@ public class TheDoorClose : MonoBehaviour
 
     private void OnMouseDrag() //如果要在达到确定位置后不可移动将//@注释删除
     {
+        ondrag = true;
+        Debug.Log("dragged");
+        source.PlayOneShot(tremble, 0.2F);   //播放声音:惊叫
         //@if(isFinished ==  false )
         //@{
         transform.position = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
@@ -58,6 +70,7 @@ public class TheDoorClose : MonoBehaviour
     {
         if (PANDING == true)
         {
+
             if (Mathf.Abs(transform.position.x - zx) <= 2.0f &&
                 Mathf.Abs(transform.position.y - zy) <= 2.0f)
             {
@@ -101,5 +114,18 @@ public class TheDoorClose : MonoBehaviour
                     Destroy(gameObject);
                 }
          */
+    }
+    void Update()
+    {
+        //使得店员在未被拖拽时表现“颤抖”
+        // UnityEngine.Random r = new UnityEngine.Random();
+
+        Vector2 position = rigidbody2d.position;
+        position.x = position.x + (float)(0.1f * UnityEngine.Random.Range(-0.2f, 0.2f));
+        //     position.y = position.y + (float)(0.1f * UnityEngine.Random.Range(-0.2f, 0.2f));
+
+        rigidbody2d.MovePosition(position);
+
+
     }
 }
