@@ -16,7 +16,7 @@ public class ToEighteen : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("2-1");
+            SceneManager.LoadScene("1-18");
         }
     }
 }

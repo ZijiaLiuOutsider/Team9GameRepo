@@ -32,7 +32,6 @@ public class DialogSysytem : MonoBehaviour
     public Sprite face11;
     public Sprite face12;
     public Sprite face13;
-    public Sprite face14;
 
     bool textFinished;
     bool cancelTyping;
@@ -60,70 +59,29 @@ public class DialogSysytem : MonoBehaviour
             gameObject.SetActive(false);
             index = 0;
             //太高端的写不来 写个简单的凑活一哈
-            if (sequz == 3)
+            if(sequz == 3)
             {
-                SceneManager.LoadScene("1-3");
+              SceneManager.LoadScene("1-3");
+            }else if(sequz == 6){
+              SceneManager.LoadScene("1-6");
+            }else if(sequz == 8){
+              SceneManager.LoadScene("1-8");
+            }else if(sequz == 9){
+              SceneManager.LoadScene("1-9");
+            }else if (sequz == 11){ 
+              SceneManager.LoadScene("1-11");
+            }else if (sequz == 12){
+              SceneManager.LoadScene("1-12");
+            }else if (sequz == 13){
+              SceneManager.LoadScene("1-13");
+            }else if (sequz == 14){
+              SceneManager.LoadScene("1-14");
+            }else if (sequz == 15){
+              SceneManager.LoadScene("1-15");
+            }else if (sequz == 16){
+              SceneManager.LoadScene("1-16");
             }
-            else if (sequz == 6)
-            {
-                SceneManager.LoadScene("1-6");
-            }
-            else if (sequz == 8)
-            {
-                SceneManager.LoadScene("1-8");
-            }
-            else if (sequz == 9)
-            {
-                SceneManager.LoadScene("1-9");
-            }
-            else if (sequz == 11)
-            {
-                SceneManager.LoadScene("1-11");
-            }
-            else if (sequz == 12)
-            {
-                SceneManager.LoadScene("1-12");
-            }
-            else if (sequz == 13)
-            {
-                SceneManager.LoadScene("1-13");
-            }
-            else if (sequz == 14)
-            {
-                SceneManager.LoadScene("1-14");
-            }
-            else if (sequz == 15)
-            {
-                SceneManager.LoadScene("1-15");
-            }
-            else if (sequz == 16)
-            {
-                SceneManager.LoadScene("1-16");
-            }
-            else if (sequz == 22)
-            {
-                SceneManager.LoadScene("2-2");
-            }
-            else if (sequz == 27)
-            {
-                SceneManager.LoadScene("2-7");
-            }
-            else if (sequz == 24)
-            {
-                SceneManager.LoadScene("2-4");
-            }
-            else if (sequz == 28)
-            {
-                SceneManager.LoadScene("2-8");
-            }
-            else if (sequz == 213)
-            {
-                SceneManager.LoadScene("2-13");
-            }
-            else if (sequz == 215)
-            {
-                SceneManager.LoadScene("2-15");
-            }
+
             return;
         }
         //if (Input.GetMouseButtonDown(0) && textFinished)
@@ -172,43 +130,43 @@ public class DialogSysytem : MonoBehaviour
 
         switch (textList[index])
         {
-            case "A":
+            case "A\r":
                 faceImage.sprite = face01;
                 index++;
                 Debug.Log("switchloadingsuccess code1");
                 //Debug.Log(faceImage.sprite);
                 break;
-            case "B":
+            case "B\r":
                 faceImage.sprite = face02;
                 index++;
                 Debug.Log("switchloadingsuccess code2");
                 break;
 
-            case "C":
+            case "C\r":
                 faceImage.sprite = face03;
                 index++;
                 Debug.Log("switchloadingsuccess code3");
                 break;
 
-            case "D":
+            case "D\r":
                 faceImage.sprite = face04;
                 index++;
                 Debug.Log("switchloadingsuccess code4");
                 break;
 
-            case "E":
+            case "E\r":
                 faceImage.sprite = face05;
                 index++;
                 Debug.Log("switchloadingsuccess code5");
                 break;
 
-            case "F":
+            case "F\r":
                 faceImage.sprite = face06;
                 index++;
                 Debug.Log("switchloadingsuccess code6");
                 break;
                 ;
-            case "G":
+            case "G\r":
                 faceImage.sprite = face07;
                 index++;
                 Debug.Log("switchloadingsuccess code7");
@@ -216,40 +174,35 @@ public class DialogSysytem : MonoBehaviour
                 break;
 
 
-            case "H":
+            case "H\r":
                 faceImage.sprite = face08;
                 index++;
                 Debug.Log("switchloadingsuccess code8");
                 break;
-            case "I":
+            case "I\r":
                 faceImage.sprite = face09;
                 index++;
                 Debug.Log("switchloadingsuccess code9");
                 break;
-            case "J":
+            case "J\r":
                 faceImage.sprite = face10;
                 index++;
                 Debug.Log("switchloadingsuccess code10");
                 break;
-            case "K":
+            case "K\r":
                 faceImage.sprite = face11;
                 index++;
                 Debug.Log("switchloadingsuccess code11");
                 break;
-            case "L":
+            case "L\r":
                 faceImage.sprite = face12;
                 index++;
                 Debug.Log("switchloadingsuccess code12");
                 break;
-            case "M":
+            case "M\r":
                 faceImage.sprite = face13;
                 index++;
                 Debug.Log("switchloadingsuccess code13");
-                break;
-            case "N":
-                faceImage.sprite = face14;
-                index++;
-                Debug.Log("switchloadingsuccess code14");
                 break;
         }
 

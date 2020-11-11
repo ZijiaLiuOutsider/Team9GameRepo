@@ -81,9 +81,6 @@ public class DragToBody2 : MonoBehaviour
             {
                 transform.position = new Vector2(correctTrans.position.x, correctTrans.position.y);
                 number = 0;
-                SceneManager.LoadScene("1-17");
-                Debug.Log("correct place...");
-                isFinished = true;
                 //@isFinished = true;
             }
             else

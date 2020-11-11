@@ -29,7 +29,7 @@ public class usePhone : MonoBehaviour
     {
         startPos = transform.position;
 
-        if (zx == 0 && zy ==0)
+        if (zx == 0 || zy == 0)
         {
             PANDING = false;
         }
@@ -81,9 +81,6 @@ public class usePhone : MonoBehaviour
             {
                 transform.position = new Vector2(correctTrans.position.x, correctTrans.position.y);
                 number = 0;
-                SceneManager.LoadScene("1-7");
-                Debug.Log("correct place...");
-                isFinished = true;
                 //@isFinished = true;
             }
             else
