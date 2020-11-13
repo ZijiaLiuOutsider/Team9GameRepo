@@ -68,6 +68,7 @@
     <Compile Include="Assets\Sc\Scene\1th\usePhone.cs" />
     <Compile Include="Assets\Sc\Scene\1th\DragToBody.cs" />
     <Compile Include="Assets\Sc\Scene\1th\DragToBody2.cs" />
+    <Compile Include="Assets\Sc\Drag\WineDrag.cs" />
     <Compile Include="Assets\Sc\UI\Line.cs" />
     <Compile Include="Assets\Sc\Drag\zippoDrag.cs" />
     <Compile Include="Assets\Sc\ButtonPause.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Sc\UI\ClickToDestory.cs" />
     <Compile Include="Assets\Sc\SceneScaleController.cs" />
     <Compile Include="Assets\Sc\Drag\buttonDrag.cs" />
+    <Compile Include="Assets\Sc\Drag\CasherDrag.cs" />
     <Compile Include="Assets\Sc\UIDrag\UIreset.cs" />
     <Compile Include="Assets\Sc\Text\test.cs" />
     <Compile Include="Assets\Sc\cardPosition\GetPosition.cs" />
@@ -90,8 +92,7 @@
     <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
     <Compile Include="Assets\Sc\Scene\1th\TheDoorClose.cs" />
     <Compile Include="Assets\Sc\Text\TalkButton.cs" />
-    <Compile Include="Assets\Sc\Drag\CasherDrag.cs" />
-    <Compile Include="Assets\Sc\Drag\WineDrag.cs" />
+    <Compile Include="Assets\Sc\Drag\CNMBDrag.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\dialog\2\2-4-1.txt" />
@@ -108,6 +109,7 @@
      <None Include="Assets\dialog\2\2-9.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Sc\Text\dialog3-1-1.txt" />
+     <None Include="Assets\dialog\2\2-13.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
