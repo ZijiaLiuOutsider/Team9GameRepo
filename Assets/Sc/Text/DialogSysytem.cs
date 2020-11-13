@@ -34,8 +34,42 @@ public class DialogSysytem : MonoBehaviour
     public Sprite face13;
     public Sprite face14;
 
+    [Header("场景中是否有对话语音")]
+    public bool audioON = false;
+
+    [Header("对话音频(bool对应是否加载对应位置的音频)")]
+    public bool BOOL_AC0 = false;
+    public AudioClip AC0;
+    public bool BOOL_AC1 = false;
+    public AudioClip AC1;
+    public bool BOOL_AC2 = false;
+    public AudioClip AC2;
+    public bool BOOL_AC3 = false;
+    public AudioClip AC3;
+    public bool BOOL_AC4 = false;
+    public AudioClip AC4;
+    public bool BOOL_AC5 = false;
+    public AudioClip AC5;
+    public bool BOOL_AC6 = false;
+    public AudioClip AC6;
+    public bool BOOL_AC7 = false;
+    public AudioClip AC7;
+    public bool BOOL_AC8 = false;
+    public AudioClip AC8;
+    public bool BOOL_AC9 = false;
+    public AudioClip AC9;
+    public bool BOOL_AC10 = false;
+    public AudioClip AC10;
+
+    
+    
+    [Header("场景中音频播放序号")]
+    public int countnum = 0;//记录播放的语音的序号
+
     bool textFinished;
     bool cancelTyping;
+  
+    
 
     List<string> textList = new List<string>();
 
@@ -214,8 +248,6 @@ public class DialogSysytem : MonoBehaviour
                 Debug.Log("switchloadingsuccess code7");
                 Debug.Log(faceImage.sprite);
                 break;
-
-
             case "H":
                 faceImage.sprite = face08;
                 index++;
@@ -253,22 +285,87 @@ public class DialogSysytem : MonoBehaviour
                 break;
         }
 
+        if (audioON)
+        {
+            if (countnum == 0 && BOOL_AC0)
+            {
+                AudioSource.PlayClipAtPoint(AC0, faceImage.transform.position);
+                Debug.Log("音频0加载成功");
+            }
+            if (countnum == 1 && BOOL_AC1)
+            {
+                AudioSource.PlayClipAtPoint(AC1, faceImage.transform.position);
+                Debug.Log("音频1加载成功");
+            }
+            if (countnum == 2 && BOOL_AC2)
+            {
+                AudioSource.PlayClipAtPoint(AC2, faceImage.transform.position);
+                Debug.Log("音频2加载成功");
+            }
+            if (countnum == 3 && BOOL_AC3)
+            {
+                AudioSource.PlayClipAtPoint(AC3, faceImage.transform.position);
+                Debug.Log("音频3加载成功");
+            }
+            if (countnum == 4 && BOOL_AC4)
+            {
+                AudioSource.PlayClipAtPoint(AC4, faceImage.transform.position);
+                Debug.Log("音频4加载成功");
+            }
+            if (countnum == 5 && BOOL_AC5)
+            {
+                AudioSource.PlayClipAtPoint(AC5, faceImage.transform.position);
+                Debug.Log("音频5加载成功");
+            }
+            if (countnum == 6 && BOOL_AC6)
+            {
+                AudioSource.PlayClipAtPoint(AC5, faceImage.transform.position);
+                Debug.Log("音频6加载成功");
+            }
+            if (countnum == 7 && BOOL_AC7)
+            {
+                AudioSource.PlayClipAtPoint(AC7, faceImage.transform.position);
+                Debug.Log("音频7加载成功");
+            }
+            if (countnum == 8 && BOOL_AC8)
+            {
+                AudioSource.PlayClipAtPoint(AC8, faceImage.transform.position);
+                Debug.Log("音频8加载成功");
+            }
+            if (countnum == 9 && BOOL_AC9)
+            {
+                AudioSource.PlayClipAtPoint(AC9, faceImage.transform.position);
+                Debug.Log("音频9加载成功");
+            }
+            if (countnum == 10 && BOOL_AC10)
+            {
+                AudioSource.PlayClipAtPoint(AC10, faceImage.transform.position);
+                Debug.Log("音频10加载成功");
+            }
+
+        }
         //for (int i = 0; i < textList[index].Length; i++)
         //{
         //    textLabel.text += textList[index][i];
         //    yield return new WaitForSeconds(textSpeed);
         //}
         int letter = 0;
+        
         while(!cancelTyping && letter  < textList[index].Length - 1)
         {
+          
             textLabel.text += textList[index][letter];
             letter++;
+           
             yield return new WaitForSeconds(textSpeed);
         }
         textLabel.text = textList[index];
         cancelTyping = false;
 
+        countnum++;
+        
         textFinished = true; 
         index++;
+        
     }
 }
