@@ -84,6 +84,10 @@ public class UIDrag : MonoBehaviour
                 {
                     SceneManager.LoadScene("2-15");
                 }
+                if (SceneNumber == 217)
+                {
+                    SceneManager.LoadScene("2-17");
+                }
                 isFinished = true;
             }
             else
@@ -111,6 +115,10 @@ public class UIDrag : MonoBehaviour
                 if (SceneNumber == 215)
                 {
                     SceneManager.LoadScene("2-15");
+                }
+                if (SceneNumber == 217)
+                {
+                    SceneManager.LoadScene("2-17");
                 }
                 isFinished = true;
                 //@isFinished = true;

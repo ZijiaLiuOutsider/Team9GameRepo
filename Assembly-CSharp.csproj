@@ -90,6 +90,8 @@
     <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
     <Compile Include="Assets\Sc\Scene\1th\TheDoorClose.cs" />
     <Compile Include="Assets\Sc\Text\TalkButton.cs" />
+    <Compile Include="Assets\Sc\Drag\CasherDrag.cs" />
+    <Compile Include="Assets\Sc\Drag\WineDrag.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\dialog\2\2-4-1.txt" />
@@ -115,6 +117,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\dialog\2\2-11.txt" />
      <None Include="Assets\dialog\2\2-6.txt" />
      <None Include="Assets\Sc\Text\dialog3-1-2.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -124,6 +127,7 @@
      <None Include="Assets\Sc\Text\dialog3-1-4.txt" />
      <None Include="Assets\Scenes\1th\第三个小场景\人物映射表.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\dialog\2\2-10.txt" />
      <None Include="Assets\Perf\场景\1\位置信息 .txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -133,6 +137,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Sc\Text\dialog1.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\dialog\2\2-12.txt" />
     <Reference Include="UnityEngine">
       <HintPath>F:\2020.1.5f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
