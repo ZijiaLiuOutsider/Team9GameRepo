@@ -120,6 +120,10 @@ public class UIDrag : MonoBehaviour
                 {
                     SceneManager.LoadScene("2-17");
                 }
+                if (SceneNumber == 222)
+                {
+                    SceneManager.LoadScene("2-22");
+                }
                 isFinished = true;
                 //@isFinished = true;
             }

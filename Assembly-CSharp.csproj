@@ -78,6 +78,7 @@
     <Compile Include="Assets\Sc\Text\PlayerController.cs" />
     <Compile Include="Assets\Sc\UI\ClickToDestory.cs" />
     <Compile Include="Assets\Sc\SceneScaleController.cs" />
+    <Compile Include="Assets\Sc\Drag\CNMBDrag.cs" />
     <Compile Include="Assets\Sc\Drag\buttonDrag.cs" />
     <Compile Include="Assets\Sc\Drag\CasherDrag.cs" />
     <Compile Include="Assets\Sc\UIDrag\UIreset.cs" />
@@ -92,7 +93,7 @@
     <Compile Include="Assets\Sc\Scene\1th\TO.cs" />
     <Compile Include="Assets\Sc\Scene\1th\TheDoorClose.cs" />
     <Compile Include="Assets\Sc\Text\TalkButton.cs" />
-    <Compile Include="Assets\Sc\Drag\CNMBDrag.cs" />
+    <Compile Include="Assets\Sc\Drag\NVZHUDrag.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\dialog\2\2-4-1.txt" />
@@ -114,6 +115,7 @@
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\dialog\2\2-14.txt" />
      <None Include="Assets\dialog\2\2-7.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
@@ -125,6 +127,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\dialog\2\2-3-1 1.txt" />
      <None Include="Assets\dialog\2\2-1-1.txt" />
+     <None Include="Assets\dialog\2\2-16.txt" />
      <None Include="Assets\Sc\Text\dialog3-1-7.txt" />
      <None Include="Assets\Sc\Text\dialog3-1-4.txt" />
      <None Include="Assets\Scenes\1th\第三个小场景\人物映射表.txt" />
@@ -132,6 +135,7 @@
      <None Include="Assets\dialog\2\2-10.txt" />
      <None Include="Assets\Perf\场景\1\位置信息 .txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\dialog\2\2-15.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Sc\Text\dialog3-1-6.txt" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
