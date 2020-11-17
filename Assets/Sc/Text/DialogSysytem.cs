@@ -170,6 +170,26 @@ public class DialogSysytem : MonoBehaviour
             {
                 SceneManager.LoadScene("2-21");
             }
+            else if (sequz == 32)
+            {
+                SceneManager.LoadScene("3-2");
+            }
+            else if (sequz == 38)
+            {
+                SceneManager.LoadScene("3-8");
+            }
+            else if (sequz == 310)
+            {
+                SceneManager.LoadScene("3-10");
+            }
+            else if (sequz == 311)
+            {
+                SceneManager.LoadScene("3-11");
+            }
+            else if (sequz == 313)
+            {
+                SceneManager.LoadScene("3-13");
+            }
             return;
         }
         //if (Input.GetMouseButtonDown(0) && textFinished)

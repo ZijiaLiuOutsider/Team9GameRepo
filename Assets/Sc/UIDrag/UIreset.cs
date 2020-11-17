@@ -24,6 +24,8 @@ public class UIreset: MonoBehaviour
     private bool PANDING;//用于判定是场景中物体还是UI中产生的物体
     private float number = 0;
 
+
+    public float num;
     Quaternion b = new Quaternion(0, 0, 0, 0);
     Vector3 a = new Vector3(0, 0, 0); //实例化预制体的position，可自定义
 
@@ -91,7 +93,12 @@ public class UIreset: MonoBehaviour
                 //SceneManager.LoadScene("2-11");
                 originUI.SetActive(true);
                 targetUI.SetActive(false);
+                if(num == 39)
+                {
+                    SceneManager.LoadScene("3-9");
+                }
                 Debug.Log("已经回收");
+
                 isFinished = true;
                 //@isFinished = true;
             }
